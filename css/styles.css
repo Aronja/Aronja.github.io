@@ -1,8 +1,21 @@
 body {
   color: darkblue;
   text-align: center;
-  background-color: lightblue;
   padding-top: 70px;
+  background-image: linear-gradient(#C1EEFF, #8EDCE6);
+
 }
 
-
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 25px;
+  }
+}
