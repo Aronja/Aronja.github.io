@@ -3,6 +3,16 @@ h2{
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+p {
+  text-align: center;
+  color: darkblue;
+}
+
 body {
   background-color: lightblue;
   padding-top: 70px;
