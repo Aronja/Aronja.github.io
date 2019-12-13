@@ -1,10 +1,31 @@
 body {
-  color: darkblue;
+  color: #006400;
   text-align: center;
   padding-top: 70px;
-  background-image: linear-gradient(#C1EEFF, #8EDCE6);
-
+  background-color: #D7CDCC;
 }
+
+.vl {
+  border-left: 6px solid #006400;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.next {
+  border-left: 6px solid #B1CF5F;
+  }
+
+.third {
+  border-left: 6px solid #DEF4C6;
+}
+
+#right {
+  float: right;
+}
+
 
 html {
   font-size: 16px;
