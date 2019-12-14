@@ -1,8 +1,15 @@
 <html>
 <head>
+  <script>
+    if (location.protocol !== 'https:')
+    {
+      location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+  </script>
+
   <title>Anja Schmid Hebamme</title>
   <link href="css/styles.css" rel="stylesheet" />
-</head>
+</head> 
 <div class="vl next third"></div>
 <div class="vl next"></div>
 <div class="vl"></div>
@@ -21,10 +28,6 @@
   <br/>
   <p>Homepage derzeit noch in Bearbeitung</p>
 </body>
-<script>
-  window.location="https://hebamme-anja.at"
-</script>
-
 
 </html>
 
