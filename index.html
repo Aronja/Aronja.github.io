@@ -1,33 +1,42 @@
 <html>
 <head>
-  <script>
-    if (!(location.protocol.includes("localhost")) && location.protocol !== 'https:')
-    {
-      location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
-  </script>
+    <script>
+      if (location.hostname !== "localhost" && location.protocol !== 'https:') {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
 
-  <title>Anja Schmid Hebamme</title>
-  <link href="css/styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Anja Schmid Hebamme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
-<div class="vl next third"></div>
-<div class="vl next"></div>
-<div class="vl"></div>
 
 <body>
-    <h2>Willkommen auf der Homepage von</h2>
-    <h2>Hebamme</h2>
-  <h1>Anja Schmid</h1>
+<div class="navbar">
+    <a class="navbar-item" href="#">&uuml;ber mich</a>
+    <a class="navbar-item" href="#">Kontakt</a>
+</div>
 
-    <div class="vl next third #right"></div>
-    <div class="vl next #right"></div>
-    <div class="vl #right"></div>
-  <br/>
-  <p>bitte schicken Sie mir ein Email</p>
-  <h2><a href = "mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
-  <br/>
-  <p>Homepage derzeit noch in Bearbeitung</p>
+<div class="stripes">
+    <div class="vl next third"></div>
+    <div class="vl next"></div>
+    <div class="vl"></div>
+</div>
+
+<div class="welcome">
+        <div>
+            <h2>Willkommen auf der Homepage von</h2>
+            <h2>Hebamme</h2>
+            <h1>Anja Schmid</h1>
+        </div>
+
+    <br/>
+    <p>bitte schicken Sie mir ein Email</p>
+    <h2><a href="mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
+    <br/>
+    <p>Homepage derzeit noch in Bearbeitung</p>
+</div>
 </body>
 
 </html>
