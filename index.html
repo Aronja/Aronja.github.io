@@ -26,15 +26,18 @@
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
+<body>
 
 <p>
-<div class="navbar fixed-top navbar-expand-sm"
-     style="background-color: #006400;">
-    <p>
-        <img src="./img/storch.png" width="40" height="40" alt="storch">
-    </p>
-    <a class="navbar-brand" href="#"> &uuml;ber mich</a>
-    <a class="navbar-brand" href="#">Kontakt und Termine</a>
+    <div class="navbar fixed-top navbar-expand-sm"
+         style="background-color: #006400;">
+<a class="navbar-brand" href="#home">
+    <img src="./img/storch.png" width="40" height="40" alt="storch">
+</a>
+<a class="navbar-brand" href="#about"> &uuml;ber mich</a>
+<a class="navbar-brand" href="#angebote">Angebote</a>
+<a class="navbar-brand" href="#kosten">Kosten</a>
+<a class="navbar-brand" href="#kontakt">Kontakt</a>
 </div>
 
 <div class="stripes">
@@ -43,7 +46,7 @@
     <div class="vl"></div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="home">
     <div class="row">
         <div class="col-md pl-1 welcome">
             <br/>
@@ -61,13 +64,13 @@
     </div>
 </div>
 
-<div class="container-fluid striped-border">
+<div class="container-fluid striped-border" id="about">
 </div>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md pl-0 text-center">
-            <img class="image professional" src="./img/professional1.jpg" alt="Behandlung">
+            <img class="image professional" src="./img/professional2.jpg" alt="Behandlung">
         </div>
         <div class="col-md pl-3">
             <br/>
@@ -100,7 +103,7 @@
 <div class="container-fluid striped-border">
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="angebote">
     <h2>Angebote</h2>
     <h1>Vor der Geburt</h1>
 
@@ -168,18 +171,38 @@
     </div>
 </div>
 
+<div class="container-fluid">
+    <img class="bigImage professional" src="./img/professional1.jpg" alt="Behandlung">
+</div>
+
 <div class="container-fluid striped-border">
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="kosten">
     <h2>Kosten</h2>
-<p>Hier erhalten Sie einen &#220;berblick zur Hebammenbetreuung.
-    Da ich Wahlhebamme bin verrechne ich nicht direkt mit der Krankenkasse.
-    Sie erhalten von mir eine Rechnung, die Sie bei der Krankenkasse einreichen k&#246;nnen.
-    Unter bestimmten Voraussetzungen werden 80% des Kassentarifes von der Krankenkasse refundiert.
-    Diese Voraussetzungen sehen Sie in der Abbildung in den gr&#252;n hinterlegten K&#228;stchen.
-    Die wei&#223;en K&#228;stchen sind Leistungen, die nicht von der Krankenkasse bezahlt werden.</p>
+    <p>Hier erhalten Sie einen &#220;berblick zur Hebammenbetreuung.
+        Da ich Wahlhebamme bin verrechne ich nicht direkt mit der Krankenkasse.
+        Sie erhalten von mir eine Rechnung, die Sie bei der Krankenkasse einreichen k&#246;nnen.
+        Unter bestimmten Voraussetzungen werden 80% des Kassentarifes von der Krankenkasse refundiert.
+        Diese Voraussetzungen sehen Sie in der Abbildung in den gr&#252;n hinterlegten K&#228;stchen.
+        Die wei&#223;en K&#228;stchen sind Leistungen, die nicht von der Krankenkasse bezahlt werden.</p>
+</div>
+
+<div class="container-fluid striped-border">
+</div>
+
+<div class="container-fluid" id="kontakt">
+    <h2>Kontakt</h2>
+
+    <p>Wenn Sie Fragen zu meinen Angeboten haben oder eine Leistung in Anspruch nehmen wollen, w&#252;rde ich mich sehr
+        freuen,
+        wenn Sie Kontakt zu mir aufnehmen w&#252;rden:</p>
+
+    <p>Anja Schmid, BSc</p>
+    <p>Telefon: +43 699 1 957 35 38</p>
+</div>
 
 </body>
+
 
 </html>

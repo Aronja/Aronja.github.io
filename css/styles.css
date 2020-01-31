@@ -69,6 +69,9 @@ html {
   .image {
     height: 200px;
   }
+  .bigImage{
+    height: 300px;
+  }
   .email{
     font-size: 10px;
   }
@@ -81,6 +84,9 @@ html {
   .image {
     height: 200px;
   }
+  .bigImage{
+     height: 300px;
+   }
   .email{
     font-size: 13px;
   }
@@ -97,6 +103,9 @@ html {
   .image {
     height: 500px;
   }
+  .bigImage{
+    height: 600px;
+  }
   .email{
     font-size: 20px;
   }
@@ -112,6 +121,9 @@ html {
   }
   .image {
     height: 600px;
+  }
+  .bigImage{
+    height: 700px;
   }
   .email{
     font-size: 25px;
