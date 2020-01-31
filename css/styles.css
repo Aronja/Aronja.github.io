@@ -1,7 +1,8 @@
 body {
   color: #006400;
-  text-align: center;
+  /*text-align: center;*/
   padding-top: 70px;
+  padding-left: 100px;
   background-color: #D7CDCC;
 }
 
@@ -13,6 +14,7 @@ body {
   top: 50px;
   left: 5px;
 }
+
 
 .next {
   border-left: 6px solid #B1CF5F;
@@ -27,58 +29,39 @@ body {
   left: 35px;
 }
 
-.navbar {
-  background-color: #006400;
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  left: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #ddd;
+.navbar > a:hover {
   color: black;
+  background-color:#D7CDCC;
 }
 
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+.navbar > a {
+  color: #f2f2f2;
 }
 
-.welcome {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-
-#right {
-  float: right;
-}
+/*.welcome {*/
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*margin-right: -50%;*/
+  /*transform: translate(-50%, -50%)*/
+/*}*/
 
 
 html {
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
+
 @media screen and (min-width: 320px) {
   html {
     font-size: 10px;
+  }
+  .image {
+    height: 50px;
+  }
+  .logo {
+    height: 80px;
   }
 }
 
@@ -86,9 +69,22 @@ html {
   html {
     font-size: 13px;
   }
+  .image {
+    height: 100px;
+  }
+  .logo {
+    height: 160px;
+  }
 }
+
 @media screen and (min-width: 1000px) {
   html {
     font-size: 18px;
+  }
+  .image {
+    height: 400px;
+  }
+  .logo {
+    height: 500px;
   }
 }

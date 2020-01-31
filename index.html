@@ -1,21 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <title>Anja Schmid Hebamme</title>
+
     <script>
       if (location.hostname !== "localhost" && location.protocol !== 'https:') {
         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
       }
     </script>
 
-    <title>Anja Schmid Hebamme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="navbar">
-    <a class="navbar-item" href="#">&uuml;ber mich</a>
-    <a class="navbar-item" href="#">Kontakt</a>
+<div class="navbar fixed-top navbar-expand-sm flex-column flex-md-row"
+     style="background-color: #006400;">
+    <a class="navbar-brand" href="#">&uuml;ber mich</a>
+    <a class="navbar-brand" href="#">Kontakt und Termine</a>
 </div>
 
 <div class="stripes">
@@ -24,21 +31,26 @@
     <div class="vl"></div>
 </div>
 
-<div class="welcome">
-        <div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md">
+            <img class="logo" src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="col-md">
             <h2>Willkommen auf der Homepage von</h2>
             <h2>Hebamme</h2>
             <h1>Anja Schmid</h1>
+            <p>bitte schicken Sie mir ein Email</p>
+            <h2><a href="maislto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
+            <br/>
+            <p>Homepage derzeit noch in Bearbeitung</p>
         </div>
-
-    <br/>
-    <p>bitte schicken Sie mir ein Email</p>
-    <h2><a href="mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
-    <br/>
-    <p>Homepage derzeit noch in Bearbeitung</p>
+        <div class="col-md">
+            <img class="image" src="./img/anja.png" alt="Anja">
+        </div>
+    </div>
 </div>
+
 </body>
 
 </html>
-
-
