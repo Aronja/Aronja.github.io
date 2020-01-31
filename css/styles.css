@@ -1,6 +1,5 @@
 body {
   color: #006400;
-  /*text-align: center;*/
   padding-top: 70px;
   padding-left: 35px;
   background-color: #D7CDCC;
@@ -69,6 +68,9 @@ html {
   .email{
     font-size: 13px;
   }
+  .storch {
+    padding-top: 0px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -81,6 +83,10 @@ html {
   .email{
     font-size: 20px;
   }
+  .storch {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -92,5 +98,9 @@ html {
   }
   .email{
     font-size: 20px;
+  }
+  .storch {
+    height: 30px;
+    width: 30px;
   }
 }
