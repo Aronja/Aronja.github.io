@@ -29,15 +29,15 @@
 <body>
 
 <p>
-    <div class="navbar fixed-top navbar-expand-sm"
-         style="background-color: #006400;">
-<a class="navbar-brand" href="#home">
-    <img src="./img/storch.png" width="40" height="40" alt="storch">
-</a>
-<a class="navbar-brand" href="#about"> &uuml;ber mich</a>
-<a class="navbar-brand" href="#angebote">Angebote</a>
-<a class="navbar-brand" href="#kosten">Kosten</a>
-<a class="navbar-brand" href="#kontakt">Kontakt</a>
+<div class="navbar fixed-top navbar-expand-sm"
+     style="background-color: #006400;">
+    <a class="navbar-brand" href="#home">
+        <img src="./img/storch.png" width="40" height="40" alt="storch">
+    </a>
+    <a class="navbar-brand" href="#about"> &uuml;ber mich</a>
+    <a class="navbar-brand" href="#angebote">Angebote</a>
+    <a class="navbar-brand" href="#kosten">Kosten</a>
+    <a class="navbar-brand" href="#kontakt">Kontakt</a>
 </div>
 
 <div class="stripes">
@@ -48,6 +48,9 @@
 
 <div class="container-fluid" id="home">
     <div class="row">
+        <div class="col-md pl-1 text-center">
+            <img class="image" src="./img/anja.png" alt="Anja">
+        </div>
         <div class="col-md pl-1 welcome">
             <br/>
             <h2>Willkommen auf der Homepage von</h2>
@@ -57,9 +60,6 @@
             <h2 class="email"><a href="mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
             <br/>
             <p>Homepage derzeit noch in Bearbeitung</p>
-        </div>
-        <div class="col-md pl-1 text-center">
-            <img class="image" src="./img/anja.png" alt="Anja">
         </div>
     </div>
 </div>
@@ -179,14 +179,26 @@
 </div>
 
 <div class="container-fluid" id="kosten">
-    <h2>Kosten</h2>
-    <p>Hier erhalten Sie einen &#220;berblick zur Hebammenbetreuung.
-        Da ich Wahlhebamme bin verrechne ich nicht direkt mit der Krankenkasse.
-        Sie erhalten von mir eine Rechnung, die Sie bei der Krankenkasse einreichen k&#246;nnen.
-        Unter bestimmten Voraussetzungen werden 80% des Kassentarifes von der Krankenkasse refundiert.
-        Diese Voraussetzungen sehen Sie in der Abbildung in den gr&#252;n hinterlegten K&#228;stchen.
-        Die wei&#223;en K&#228;stchen sind Leistungen, die nicht von der Krankenkasse bezahlt werden.</p>
+    <div class="row">
+        <div class="col-md pl-0 text-center">
+            <h2>Kosten</h2>
+            <p>Hier erhalten Sie einen &#220;berblick zur Hebammenbetreuung.
+                Da ich Wahlhebamme bin verrechne ich nicht direkt mit der Krankenkasse.
+                Sie erhalten von mir eine Rechnung, die Sie bei der Krankenkasse einreichen k&#246;nnen.
+                Unter bestimmten Voraussetzungen werden 80% des Kassentarifes von der Krankenkasse refundiert.
+                Diese Voraussetzungen sehen Sie in der Abbildung in den gr&#252;n hinterlegten K&#228;stchen.
+                Die wei&#223;en K&#228;stchen sind Leistungen, die nicht von der Krankenkasse bezahlt werden.</p>
+        </div>
+
+        <div class="col-md pl-0 text-center">
+            <div>
+                <img class="bigImage professional"  src="./img/hebammenbetreuung.png" alt="Betreuung">
+                <i>Quelle: www.hebammen.at/eltern/kosten</i>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <div class="container-fluid striped-border">
 </div>

@@ -57,6 +57,10 @@ body {
   margin-right: auto;
 }
 
+.footnote {
+  text-align: right;
+}
+
 html {
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -124,6 +128,9 @@ html {
   }
   .bigImage{
     height: 700px;
+  }
+  #biggerImage{
+    height: 800px;
   }
   .email{
     font-size: 25px;
