@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: auto;
-}
-
 body {
   color: #006400;
   padding-top: 70px;
@@ -35,6 +31,18 @@ body {
   border: 1px dashed #006400;
   width: 90%;
   margin: 5% auto;
+}
+
+.navbar > a:hover {
+  color: darkgreen;
+}
+
+.navbar > a {
+  color: #f2f2f2;
+}
+.nav-link {
+  color: darkslategray;
+  background-color: #006400;
 }
 
 .welcome {
