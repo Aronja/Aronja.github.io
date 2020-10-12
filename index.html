@@ -29,24 +29,24 @@
 <body>
 
 <p>
-<div class="navbar fixed-top navbar-expand-sm"
+<div class="navbar fixed-top navbar-expand-sm navbar-light"
      style="background-color: #006400;">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar" id="home" style="background-color: #006400;">
         <img src="./img/storch.png" width="40" height="40" alt="storch">
     </a>
-    <a class="navbar-brand" href="#about"> &uuml;ber mich</a>
-    <a class="navbar-brand" href="#angebote">Angebote</a>
-    <a class="navbar-brand" href="#kosten">Kosten</a>
-    <a class="navbar-brand" href="#kontakt">Kontakt</a>
+    <a class="nav-link" href="#about" style="background-color: #006400;"> &uuml;ber mich</a>
+    <a class="nav-link" href="#angebote" style="background-color: #006400;">Angebote</a>
+    <a class="nav-link" href="#kosten" style="background-color: #006400;">Kosten</a>
+    <a class="nav-link" href="#kontakt" style="background-color: #006400;">Kontakt</a>
 </div>
 
 <div class="stripes">
     <div class="vl next third"></div>
     <div class="vl next"></div>
     <div class="vl"></div>
-</div>
 
-<div class="container-fluid" id="home">
+</div>
+<div class="container-fluid">
     <div class="row">
         <div class="col-md pl-1 text-center">
             <img class="image" src="./img/anja.png" alt="Anja">
@@ -60,11 +60,13 @@
             <h2 class="email"><a href="mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></h2>
             <br/>
             <p>Homepage derzeit noch in Bearbeitung</p>
+
         </div>
     </div>
 </div>
-
-<div class="container-fluid striped-border" id="about">
+<div id="about"></div>
+<p></p>
+<div class="container-fluid striped-border">
 </div>
 
 <div class="container-fluid">
@@ -93,17 +95,21 @@
                     <p> Bachelorstudiengang Hebamme am FH Campus Wien, Abschluss 2019</p>
                 </li>
                 <li>
-                    <p> Hebamme in der Privatklinik Rudolfinerhaus seit September 2019</p>
+                    <p> Hebamme in der Privatklinik Rudolfinerhaus 09/2019 bis 04/2020</p>
+                </li>
+                <li>
+                    <p>Hebamme im St. Josef Krankenhaus seit Mai 2020</p>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 
+<div  id="angebote"></div>
 <div class="container-fluid striped-border">
 </div>
 
-<div class="container-fluid" id="angebote">
+<div class="container-fluid">
     <h2>Angebote</h2>
     <h1>Vor der Geburt</h1>
 
@@ -175,10 +181,11 @@
     <img class="bigImage professional" src="./img/professional1.jpg" alt="Behandlung">
 </div>
 
+<div id="kosten"></div>
 <div class="container-fluid striped-border">
 </div>
 
-<div class="container-fluid" id="kosten">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md pl-0 text-center">
             <h2>Kosten</h2>
@@ -192,7 +199,7 @@
 
         <div class="col-md pl-0 text-center">
             <div>
-                <img class="bigImage professional"  src="./img/hebammenbetreuung.png" alt="Betreuung">
+                <img class="bigImage professional" id="hebammenbetreuung" src="./img/hebammenbetreuung.png" alt="Betreuung">
                 <i>Quelle: <a href="https://www.hebammen.at/eltern/kosten" target="_blank">www.hebammen.at/eltern/kosten</a></i>
             </div>
         </div>
@@ -211,8 +218,13 @@
         wenn Sie Kontakt zu mir aufnehmen w&#252;rden:</p>
 
     <p>Anja Schmid, BSc</p>
+    <p class="email"><a href="mailto: anja.hebamme.wien@gmail.com">anja.hebamme.wien@gmail.com</a></p>
+
     <p>Telefon: +43 699 1 957 35 38</p>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
 
 </body>
 

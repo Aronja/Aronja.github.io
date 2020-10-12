@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: auto;
+}
+
 body {
   color: #006400;
   padding-top: 70px;
@@ -13,7 +17,6 @@ body {
   top: 50px;
   left: 5px;
 }
-
 
 .next {
   border-left: 6px solid #B1CF5F;
@@ -32,15 +35,6 @@ body {
   border: 1px dashed #006400;
   width: 90%;
   margin: 5% auto;
-}
-
-.navbar > a:hover {
-  color: black;
-  background-color:#D7CDCC;
-}
-
-.navbar > a {
-  color: #f2f2f2;
 }
 
 .welcome {
@@ -71,7 +65,7 @@ html {
     font-size: 10px;
   }
   .image {
-    height: 200px;
+    height: 150px;
   }
   .bigImage{
     height: 300px;
@@ -86,7 +80,7 @@ html {
     font-size: 13px;
   }
   .image {
-    height: 200px;
+    height: 150px;
   }
   .bigImage{
      height: 300px;
@@ -105,7 +99,7 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
   }
   .image {
-    height: 500px;
+    height: 300px;
   }
   .bigImage{
     height: 600px;
@@ -124,7 +118,7 @@ html {
     font-size: 25px;
   }
   .image {
-    height: 600px;
+    height: 400px;
   }
   .bigImage{
     height: 700px;
