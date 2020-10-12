@@ -11,7 +11,7 @@ hebammenBetreuung.addEventListener("click", function () {
 home.addEventListener("click", function () {
     setTimeout( function() {
         window.scrollTo(0,0);
-    }, 600)
+    }, 300)
 })
 
 $('a').click(function(){
