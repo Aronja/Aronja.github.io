@@ -1,0 +1,39 @@
+/**
+* Template Name: Green - v4.8.0
+* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #5cb874;
+  }
+  
+  a:hover {
+    color: #80c792;
+    text-decoration: none;
+  }
+
+  /* this doesn't work */
+  .navigation {
+    background-color: #5cb874;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
