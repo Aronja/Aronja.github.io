@@ -14,7 +14,7 @@
 
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -66,8 +66,7 @@
                 <div class="card-body">
                   To install Raspberian follow use instructions on <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2">the Rasperry Pi Foundation website</a>.
                   <br>
-                  <img src="images/Rasperian.png" alt="How to install Raspberian" style="max-width: 30%;">
-  
+                  <img src="images/Rasperian.png" alt="How to install Raspberian" style="max-width: 80%;">
                 </div>
               </div>
             </div>
@@ -267,7 +266,8 @@
                 </div>
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                   <div class="card-body">
-                    Great Work! You've writing a python script to control the pump. Now let's use it. 
+                    <div>
+                    Great Work! You've written a python script to control the pump. Now let's use it. 
 
                     First locate a 5V Power pin, a Ground pin and GPIO 17 on your Raspberry pi. 
                     You can use the diagramme, which can be found in a previous step. 
@@ -297,6 +297,7 @@
                     Is that script running fine and you can see all the log statements we added show in your terminal, then it might a matter of the cables being connected to the wrong pins.
                   </div>
                 </div>
+                </div>
               </div>
               <div class="card">
                 <div class="card-header" id="headingEight">
@@ -308,8 +309,7 @@
                 </div>
                 <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
                   <div class="card-body">
-                    Now it is time to finally connect your pump. You will need to use a tiny (maybe even cute?) 
-                    screw driver to untighten screws on the other side of the relay. Every relay as a normally open and normally connected circuit. 
+                    Now it is time to finally connect your pump. You will need to use a tiny screw driver to untighten screws on the other side of the relay. Every relay as a normally open and normally connected circuit. 
                     The normally connected circuit is always connected, which means that if we were to connect the pump and battery normally connected they would always run.
 
                     The normally open circuit on the other hand, only connects when it receives a high voltage signal. This is the one we're interested in. 
