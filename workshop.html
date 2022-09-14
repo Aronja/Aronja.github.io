@@ -270,17 +270,24 @@
                     Great Work! You've written a python script to control the pump. Now let's use it. 
 
                     First locate a 5V Power pin, a Ground pin and GPIO 17 on your Raspberry pi. 
-                    You can use the diagramme, which can be found in a previous step. 
+                    You can use the diagramme, which can be found in a previous step.
                   </div>
+                  <br></br>
+                  <img src="images/Rasperry_pins.jpeg" alt="Pin Layout Photo" style="max-width: 50%;">
+                  <img src="images/pin_layout.svg" alt="Pin Layout" style="max-width: 20%;">
+                  <br></br>
                   <div>
                     Now plug 3 female to female jumpers on these pins (ideally use different colours to avoid confusion).
-                    I tend to use red for 5V, black for the ground and any other colour for the GPIO pin.
+                    I tend to use red for 5V, black for the ground and any other colour (e.g. blue) for the GPIO pin.
                   </div>
                   <div>
                     Now connect the relay. You can use the image below as a guide. 
                     You will need to connect the red 5V cable to your plus wire, the ground to the minus and the GPIO to the one called 
-                    S.
+                    S (which stands for signal).
                   </div>
+                  <br></br>
+                  <img src="images/relay_input.jpeg" alt="Relay input" style="max-width: 50%;">
+                  <br></br>
                   <div>
                     This is a good point to stop for a moment and test your code. 
                     Go back to your terminal and run the command.
@@ -312,8 +319,16 @@
                     Now it is time to finally connect your pump. You will need to use a tiny screw driver to untighten screws on the other side of the relay. Every relay as a normally open and normally connected circuit. 
                     The normally connected circuit is always connected, which means that if we were to connect the pump and battery normally connected they would always run.
 
+                    <br></br>
+                    <img src="images/relay_connect_closed.jpeg" alt="normally connected" style="max-width: 50%;">
+                    <br></br>
+
                     The normally open circuit on the other hand, only connects when it receives a high voltage signal. This is the one we're interested in. 
                     We only want the pump to start for 2 seconds. 
+
+                    <br></br>
+                    <img src="images/relay_connect_open.jpeg" alt="normally open" style="max-width: 50%;">
+                    <br></br>
 
                     Make sure to connect the red wire of the pump and the black wire of the battery in an normally open circuit to the relay.
 
