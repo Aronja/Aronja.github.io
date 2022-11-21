@@ -81,10 +81,109 @@
                 <div class="card-body">
                   If you click on <code>CMD + SHIFT + x</code> while running the Raspberry Installer it opens a menu with allows you to set up ssh and wifi in GUI.
                   <br></br>
-                  After the OS is installed, slot the sd card into the raspberry pi and start it up. You should see a red LED and a yellow LED flash up.
-                  Within about 5 min your raspberry pi should have connected to the WIFI.
+                  In order to connect your raspberry pi to the internet, start a mobile hotspot and connect your laptop to it.
+                  Then remove the SD card from the raspberry pi and slot it into your sd card reader (please ask for an apapter if needed).
                   <br></br>
-                  There are several ways of checking your pi has connected. <a href="https://www.fing.com/products/fing-app">Fing</a> is a useful and user friendly app, 
+                  After a few seconds should see a boot folder appearing on your desktop, you will need to the folder in your computer terminal. In order to do this use CMD + SPACE and type `terminal`
+                  on Mac or use the start button on Windows to look for `Powershell`. If you're using Linux, then I assume you know what to do :).
+
+                  In your terminal first type `pwd` to see the directory you are in. 
+
+                  <br></br>
+                  <code>
+                    pwd
+                  </code>
+                  <br></br>
+
+                  Now, we need to move inside the boot directory to access files which are used by the raspberry pi.
+                  To navigate to the right directory type: 
+                  
+                  <br></br>
+                  <code>
+                    cd /Volumes/boot
+                  </code>
+                  <br></br>
+
+                  Notice there is a "/" in front of Volumes, this is important and can easily be forgotten.
+                  Now let's first create a file that allows us to ssh into our raspberry pi. SSH is a way to securely connect two or more computers, usually via command line interface.
+                  You can imagine ssh as a secret tunnel that will allows us to reach the raspberry pi and run commands on it from another laptop.
+                  
+                  Type the following command to enable ssh on the raspberry pi.
+
+                  <br></br>
+                  <code>
+                    touch ssh
+                  </code>
+                  <br></br>
+
+                  Next we will create configuration file to set up the wifi.
+                  Create a new file called wpa_supplicant.conf using the touch command.
+
+
+                  <br></br>
+                  <code>
+                    touch wpa_supplicant.conf
+                  </code>
+                  <br></br>
+
+                  Now we will need to add a few lines to this file. 
+
+                  <br></br>
+                  <code>
+                    sudo vim wpa_supplicant.ipa
+                  </code>
+                  <br></br>
+
+                  This will prompt you for your admin password (the same as when you log into your computer) and will then open a terminal based editor.
+
+                  Now type the letter "i" to get into insert mode.
+
+
+                  <br></br>
+                  <code>
+                    i
+                  </code>
+                  <br></br>
+
+                  Then copy/paste the following code snippet, which I found on <a href="https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/">the raspberry pi spy website</a>.
+
+                  <br></br>
+                  <pre>
+                    <code>
+    country=gb
+    update_config=1
+    ctrl_interface=/var/run/wpa_supplicant
+
+    network={
+    scan_ssid=1
+    ssid="yourHotspotSSID"
+    psk="yourHotspotPassword"
+    }
+                    </code>
+                  </pre>
+                  <br></br>
+
+                  The first line is a definition which explains the raspberry pi computer how to load the file. 
+                  The second line contains the country code, which we can leave as GB (unless you're not in the UK), then there are two fields for the mobile hotspot
+                  name and password. You can find the information on your mobile phone, where you set up the hotspot.
+                  <br></br>
+
+                  The only thing left to do is closing vim (which even some experienced Software Engineers find challenging ;) )
+                  In order to close vim type: first Esc, then : (colon) followed by wq and press enter.
+                  
+                  <br></br>
+                  <code>ESC : wq ENTER</code>
+                  <br></br>
+                  
+                  Nice work! Now leave the /boot directory by typing `cd ..` and eject the SD card. 
+
+                  <br></br>
+                  <code>cd ..</code>
+                  <br></br>
+                  
+                  Now let pop the SD card back into the raspberry pi and connect it to the power source. You should see a constant red light and a flashing yellow one.
+                  <br></br>
+                  There are several ways of checking your pi has connected to your hotspot. <a href="https://www.fing.com/products/fing-app">Fing</a> is a useful and user friendly app, 
                   which you can download on your phone to check all the pis that are connected to the WIFI. Make sure you see your Raspberry Pi (with the right name) show up.
                 </div>
               </div>
@@ -108,11 +207,11 @@
 
                   <br></br>
                   <code>
-                    ssh pi@raspberrypi.192.168.1.124
+                    ssh pi@192.168.1.124
                   </code>
                   <br></br>
 
-                  This command will prompt you for a password. I will provide this for you.
+                  This command will prompt you for a password. Try "raspberry" but if this shouldn't work, then I will provide this for you. 
                 </div>
               </div>
             <div class="card">
@@ -245,8 +344,10 @@
                     <br></br>
 
                     Please find the full script here.
-                    Well done! The only thing left to do is closing vim (which even some experienced Software Engineers find challenging ;) )
-                    In order to close vim type: first Esc, then : (colon) followed by wq and press enter.
+                    Well done!
+                    challenge time... do you remember how to exit vim?
+                    <br></br>
+                    Here's a wee reminder: In order to close vim type: first Esc, then : (colon) followed by wq and press enter.
                     
                     <br></br>
                     <code>ESC : wq ENTER</code>
@@ -320,6 +421,8 @@
 
                     <br></br>
                     <img src="images/relay_connect_closed.jpeg" alt="normally connected" style="max-width: 50%;">
+                    <img src="images/NC_diagramme.png" alt="normally connected diagramme" style="max-width: 50%;">
+
                     <br></br>
 
                     The normally open circuit on the other hand, only connects when it receives a high voltage signal. This is the one we're interested in. 
@@ -327,6 +430,7 @@
 
                     <br></br>
                     <img src="images/relay_connect_open.jpeg" alt="normally open" style="max-width: 50%;">
+                    <img src="images/NO_diagramme.png" alt="normally open diagramme" style="max-width: 50%;">
                     <br></br>
 
                     Make sure to connect the red wire of the pump and the black wire of the battery in an normally open circuit to the relay.
